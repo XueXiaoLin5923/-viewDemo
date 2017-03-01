@@ -1,0 +1,33 @@
+
+//
+//  DemoHeader.pch
+//  demo
+//
+//  Created by 薛晓林 on 16/9/18.
+//  Copyright © 2016年 薛晓林. All rights reserved.
+//
+
+#ifndef DemoHeader_pch
+#define DemoHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#ifdef __OBJC__
+
+#define XLHeight [[UIScreen mainScreen]bounds].size.height
+#define XLWidth [[UIScreen mainScreen]bounds].size.width
+#define XLKEY_RATE (XLWidth/375)
+#define XLPXCAL(object) (object/2)*XLKEY_RATE
+
+#define MYLINECOLOR   [UIColor colorWithRed:0.9f green:0.9f blue:0.9f alpha:1.00f]
+#define MYORANGECOLOR [UIColor colorWithRed:1.00f green:0.48f blue:0.20f alpha:1.00f]
+#define MY333333 [UIColor colorWithRed:0.26f green:0.26f blue:0.26f alpha:1.00f]
+#define MY666666 [UIColor colorWithRed:0.47f green:0.47f blue:0.47f alpha:1.00f]
+#define MY999999 [UIColor colorWithRed:0.66f green:0.66f blue:0.66f alpha:1.00f]
+
+
+
+#endif
+
+#endif /* DemoHeader_pch */
